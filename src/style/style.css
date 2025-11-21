@@ -1,0 +1,571 @@
+        html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .banner {
+      position: relative;
+      height: 200px;
+      background: url('banner-cntt.jpg') center/cover no-repeat;
+      color: white;
+    }
+    .banner .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .banner .content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    .feature-box {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .banner {
+      background-color: blue;
+    }
+    
+    .banner .content img {
+      width: 30%;
+    }
+    
+    .carousel-inner img {
+      margin: 10px;
+      width: 75%;
+    }
+    
+    .navbar {
+      background-color: white;
+    }
+    
+    .nav ul {
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: row;
+    
+    }
+    
+    .nav li {
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    /* Tin tức và sự kiện */
+    #tintuc .card {
+      min-height: 300px;
+    }
+    
+    /* 🎓 PHẦN THÔNG TIN TUYỂN SINH */
+    .admission-section {
+      background: #f9fafc;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .admission-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #003366;
+      font-weight: bold;
+    }
+    
+    .admission-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+    
+    .admission-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 360px;
+    }
+    
+    .admission-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+    }
+    
+    .admission-card img {
+      max-height: 77px;
+    }
+    
+    .admission-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    .admission-info {
+      padding: 15px;
+    }
+    
+    .admission-info h3 {
+      color: #004aad;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    
+    .admission-info p {
+      color: #333;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    /* --- CỦA TRANG GIỚI THIỆU ---- */
+    main {
+        max-width: 1100px;
+        margin: 20px auto; /* Căn giữa nội dung */
+        padding: 0 15px; /* Thêm lề hai bên cho màn hình lớn */
+    }
+    
+    /* Định dạng các khối Section */
+    section {
+        background-color: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Tạo hiệu ứng nổi nhẹ */
+    }
+    
+    section h3 {
+        color: #007bff; /* Màu xanh nổi bật */
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-top: 0;
+        text-align: center; /* Tiêu đề chính căn giữa */
+    }
+    
+    /* Tiêu đề phụ trong Section (H4) */
+    section h4 {
+        color: #004a80;
+        margin-top: 15px;
+        text-align: left; /* Tiêu đề phụ căn trái */
+        font-size: 1.2em;
+    }
+    
+    /* Căn đều hai bên cho các đoạn văn */
+    p {
+        text-align: justify;
+    }
+    
+    /* --- ĐỊNH DẠNG KHU VỰC HÌNH ẢNH (Image) --- */
+    .hinh-anh {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .image-container {
+        max-width: 1500px; /* Giới hạn kích thước ảnh */
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .caption {
+        font-style: italic;
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+    /* --- ĐỊNH DẠNG CHƯƠNG TRÌNH ĐÀO TẠO (Flexbox) --- */
+    
+    .chuong-trinh-list {
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các mục tự động xuống dòng */
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .chuong-trinh-list article {
+        flex: 1 1 45%; /* Thiết lập cơ bản: 2 mục trên 1 hàng ở màn hình lớn */
+        background-color: #e9f7ff;
+        padding: 15px;
+        border-left: 4px solid #007bff; /* Điểm nhấn màu xanh */
+        border-radius: 4px;
+        min-width: 250px; 
+    }
+    
+    .chuong-trinh-list h4 {
+        color: #004a80;
+        margin-top: 0;
+        text-align: left;
+    }
+    
+    /* --- ĐỊNH DẠNG LIST (Liên hệ, Cơ sở vật chất) --- */
+    .lien-he ul, .co-so-vat-chat ul {
+        list-style: disc; /* Dùng dấu chấm đen cho list */
+        padding-left: 20px;
+    }
+    
+    .lien-he li, .co-so-vat-chat li {
+        padding: 5px 0;
+        text-align: left;
+    }
+    
+    /* --- MEDIA QUERIES cho NỘI DUNG (Đảm bảo Responsive) --- */
+    
+    /* Cho màn hình máy tính bảng (max-width: 900px) */
+    @media (max-width: 900px) {
+        .chuong-trinh-list article {
+            flex: 1 1 45%; /* Vẫn là 2 mục trên một hàng */
+        }
+    }
+    
+    /* Cho màn hình điện thoại (max-width: 600px) */
+    @media (max-width: 600px) {
+        main {
+            padding: 0 10px;
+        }
+    
+        section {
+            padding: 20px 15px;
+        }
+    
+        .chuong-trinh-list {
+            flex-direction: column; /* Xếp chồng các mục đào tạo */
+        }
+    
+        .chuong-trinh-list article {
+            flex: 1 1 100%;
+        }
+    
+        .image-container {
+            max-width: 100%;
+        }
+    }
+    
+    
+    /* TRANG GIẢNG VIÊN */
+    /* Card giảng viên */
+    .teacher-card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      background-color: #fff;
+    }
+    
+    .teacher-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .teacher-card img {
+      margin: 15px auto;
+      margin-bottom: 0;
+      /* border-radius: 50%; */
+      clip-path: circle(50%);
+      width: 100px;
+      height: 100px;
+      display: block;
+      object-fit: cover;
+    }
+    
+    .teacher-card h5 {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #004aad;
+      text-align: center;
+    }
+    .teacher-card p {
+      color: #555;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    
+    /* Responsive chỉnh lại khi nhỏ hơn 768px */
+    @media (max-width: 768px) {
+      .banner { height: 200px; }
+      .teacher-card img { height: 180px; }
+    }
+    
+/*==========================FORM===========================*/
+.container h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #0d6efd;
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+.submit-btn {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0b5ed7;
+}
+
+
+/*============================FOOTER=============================*/
+    .site-footer {
+        background-color: #f8f9fa;
+        padding: 40px 50px;
+        border-top: 1px solid #e7e7e7;
+        font-size: 14px;
+        color: #003366;
+        line-height: 1.6;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Cột nội dung bên trái */
+.footer-content {
+    flex: 1;
+}
+
+.footer-content h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #003366;
+}
+
+.footer-content h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #004a99;
+}
+
+/* Đường gạch trang trí */
+.decorator-line {
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(to right, #fdd835 60%, #004a99 40%);
+    margin-bottom: 20px;
+}
+
+/* Thông tin liên hệ */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li i {
+    width: 24px;
+    margin-right: 8px;
+    color: #003366;
+    font-size: 1.1em;
+}
+
+.contact-info li a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact-info li a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Tra Vinh University */
+.tvu-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    width: auto; 
+}
+
+.logo-snippet {
+    height: 30px;
+    margin-right: 12px;
+}
+
+.tvu-logo span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #003366;
+}
+
+/* Đường kẻ ngang */
+.footer-hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 15px;
+    width: 100%; 
+}
+
+/* Cột Social bên phải */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #003366;
+    font-size: 26px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #0056b3;
+}
+
+/* Nút Lên đầu trang */
+.scroll-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #0056b3;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #003366;
+}
+
+/* * Áp dụng cho Máy tính bảng (khi màn hình từ 768px trở xuống) */
+@media (max-width: 768px) {
+    
+    .footer-container {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    /* Đảm bảo lề ngang chỉ còn 20px */
+    .site-footer {
+        padding: 30px 20px; 
+    }
+
+    .footer-social {
+        margin-top: 25px;
+    }
+
+    /* Thu nhỏ nút "Lên đầu trang" */
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+        .site-footer {
+        padding: 20px 20px;
+    }
+
+    .footer-content h5,
+    .footer-content h6 {
+        white-space: normal; 
+        word-break: break-word; 
+        font-size: 0.95rem; 
+    }
+    
+    .contact-info {
+        font-size: 13px;
+    }
+
+    /* 3. Căn giữa các icon social */
+    .footer-social {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* 4. Điều chỉnh kích thước hiển thị của Logo và Tên trường */
+    .logo-snippet {
+        max-width: 30px; 
+        height: auto;
+    }
+    .tvu-logo span {
+        font-size: 1rem; 
+    }
+}
+
