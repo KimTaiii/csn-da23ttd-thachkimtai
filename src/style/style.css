@@ -38,6 +38,7 @@ html, body {
 
 .banner {
   background-color: blue;
+  min-height: 200px;
 }
 
 .banner .content img {
@@ -81,7 +82,9 @@ html, body {
 /* 🎓 PHẦN THÔNG TIN TUYỂN SINH */
 .admission-section {
   background: #f9fafc;
+  margin: 0 auto;
   padding: 60px 20px;
+  max-width: 1500px;
   text-align: center;
 }
 
